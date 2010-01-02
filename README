@@ -1,5 +1,6 @@
 My emacs configuration.
 I like emacs. After 1 year's use and config, I would like share my configuration.
+Can not put all things here. So to use it please make sure cedet, ecb, ruby, rails, rhtml, rinari, rspec, yaml and themes mode all installed.
 I will keep improving it.
 Anything unclear please email me at gary20071226@gmail.com.
 Have fun:)
