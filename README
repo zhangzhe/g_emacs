@@ -4,3 +4,20 @@ Can not put all things here. So to use it please make sure cedet, ecb, ruby, rai
 I will keep improving it.
 Anything unclear please email me at gary20071226@gmail.com.
 Have fun:)
+
+my shortcut key:
+
+F5         compile
+F12        kill buffer
+C-F12      kill rinari files
+C-w        kill one line
+s-m        find file in models
+s-c        find file in controllers
+s-v        find file in views
+s-f        find file in project
+s-g        go to line
+s-o        comment code
+s-u        uncomment code
+s-h        hide all methods
+s-s        show all methods
+s-t        toggle block
