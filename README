@@ -8,17 +8,21 @@ Have fun:)
 
 my shortcut key:
 
-F5         compile
-F12        kill buffer
-C-F12      kill rinari files
-C-w        kill one line
-s-m        find file in models
-s-c        find file in controllers
-s-v        find file in views
-s-f        find file in project
-s-g        go to line
-s-o        comment code
-s-u        uncomment code
-s-h        hide all methods
-s-s        show all methods
-s-t        toggle block
+C-c C-c C-s     	tags-search
+C-c C-c C-n		tags-loop-continue
+C-c C-c C-c		inari-find-controller
+C-c C-c C-m		rinari-find-model
+C-c C-c C-v		rinari-find-view
+C-c C-c C-r		rinari-find-rspec
+C-c C-c C-f		rinari-find-file-in-project
+C-c C-c C-h		hide-all-blocks
+C-c C-c C-t		toggle-hiding-block
+C-c C-c C-o		comment-region
+C-c C-c C-u		uncomment-region
+C-c C-c C-g		goto-line
+
+
+<f5>			smart-compile
+<f8>			ecb-toggle-ecb-windows
+<f12>			kill-this-buffer
+C-<f12>			kill-all-rinari-buffers

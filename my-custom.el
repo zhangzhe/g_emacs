@@ -39,8 +39,6 @@
 (color-theme-twilight)
 
 
-
-
 ;;ecb
 (load-file "~/.emacs.d/cedet/common/cedet.el")
 (global-ede-mode 1)                      ; Enable the Project management system
@@ -113,6 +111,7 @@
 (global-set-key (kbd "s-m") 'rinari-find-model)
 (global-set-key (kbd "s-v") 'rinari-find-view)
 (global-set-key (kbd "s-h") 'rinari-find-helper)
+(global-set-key (kbd "s-s") 'rinari-find-rspec)
 (global-set-key (kbd "s-f") 'rinari-find-file-in-project)
 
 ;; kill all rinari buffers
@@ -145,14 +144,24 @@
 (global-set-key (kbd "s-h") 'hs-hide-all) 
 (global-set-key (kbd "s-s") 'hs-show-all)
 (global-set-key (kbd "s-t") 'hs-toggle-hiding)
-
-
 (global-set-key [(f8)] 'ecb-toggle-ecb-windows)
-
 
 ;; Rspec
 (load-file "~/.emacs.d/rspec/rspec-mode.el")
 (require 'rspec-mode)
-
-
 (local-set-key (kbd "s-z") 'rspec-toggle-spec-and-target)
+
+
+;;most popular
+(global-set-key (kbd "C-c C-c C-s") 'tags-search)
+(global-set-key (kbd "C-c C-c C-n") 'tags-loop-continue)
+(global-set-key (kbd "C-c C-c C-c") 'rinari-find-controller)
+(global-set-key (kbd "C-c C-c C-m") 'rinari-find-model)
+(global-set-key (kbd "C-c C-c C-v") 'rinari-find-view)
+(global-set-key (kbd "C-c C-c C-r") 'rinari-find-rspec)
+(global-set-key (kbd "C-c C-c C-f") 'rinari-find-file-in-project)
+(global-set-key (kbd "C-c C-c C-h") 'hs-hide-all) 
+(global-set-key (kbd "C-c C-c C-t") 'hs-toggle-hiding)
+(global-set-key (kbd "C-c C-c C-o") 'comment-region)
+(global-set-key (kbd "C-c C-c C-u") 'uncomment-region)
+(global-set-key (kbd "C-c C-c C-g") 'goto-line)
