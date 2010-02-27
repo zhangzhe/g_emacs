@@ -37,6 +37,8 @@
 (color-theme-initialize)
 (load-file "~/.emacs.d/themes/color-theme-twilight.el")
 (color-theme-twilight)
+;;(load-file "~/.emacs.d/themes/color-theme-railscasts.el")
+;;(color-theme-railscasts)
 
 
 ;;ecb
@@ -86,7 +88,7 @@
 
 ;;run
 (setq smart-compile-alist
-      '( ("\\.rb$" . "ruby %f")))
+      '( ("\\.rb$" . "spec %f")))
 (global-set-key [(f5)] 'smart-compile)
 
 
@@ -151,7 +153,6 @@
 (require 'rspec-mode)
 (local-set-key (kbd "s-z") 'rspec-toggle-spec-and-target)
 
-
 ;;most popular
 (global-set-key (kbd "C-c C-c C-s") 'tags-search)
 (global-set-key (kbd "C-c C-c C-n") 'tags-loop-continue)
@@ -165,3 +166,51 @@
 (global-set-key (kbd "C-c C-c C-o") 'comment-region)
 (global-set-key (kbd "C-c C-c C-u") 'uncomment-region)
 (global-set-key (kbd "C-c C-c C-g") 'goto-line)
+
+
+(load-file "~/.emacs.d/others/browse-kill-ring.el")
+(require 'browse-kill-ring)
+(global-set-key (kbd "s-p") 'browse-kill-ring)
+(browse-kill-ring-default-keybindings)
+
+(load-file "~/.emacs.d/others/browse-kill-ring.el")
+(require 'browse-kill-ring)
+(global-set-key (kbd "C-c C-c C-p") 'browse-kill-ring)
+(browse-kill-ring-default-keybindings)
+
+
+
+
+;; (add-to-list 'load-path "~/.emacs.d/ruby-complexity/")
+;; (require 'linum)
+;; (require 'ruby-complexity)
+;; (add-hook 'ruby-mode-hook
+;; 	  (function (lambda ()
+;; 		      (flymake-mode)
+;; 		      (linum-mode)
+;; 		      (ruby-complexity-mode))))
+
+
+
+
+(global-set-key [f11] 'my-fullscreen)
+
+;全屏
+(defun my-fullscreen ()
+  (interactive)
+  (x-send-client-message
+   nil 0 nil "_NET_WM_STATE" 32
+   '(2 "_NET_WM_STATE_FULLSCREEN" 0))
+)
+
+
+
+
+
+
+
+
+
+
+
+
