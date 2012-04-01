@@ -8,7 +8,7 @@ Have fun:)
 
 my shortcut key:
 
-C-c C-c C-s     	tags-search
+C-c C-c C-s     tags-search
 C-c C-c C-n		tags-loop-continue
 C-c C-c C-c		inari-find-controller
 C-c C-c C-m		rinari-find-model
@@ -25,4 +25,4 @@ C-c C-c C-g		goto-line
 <f5>			smart-compile
 <f8>			ecb-toggle-ecb-windows
 <f12>			kill-this-buffer
-C-<f12>			kill-all-rinari-buffers
+C-<f12>		kill-all-rinari-buffers

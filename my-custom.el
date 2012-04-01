@@ -202,15 +202,3 @@
    nil 0 nil "_NET_WM_STATE" 32
    '(2 "_NET_WM_STATE_FULLSCREEN" 0))
 )
-
-
-
-
-
-
-
-
-
-
-
-
